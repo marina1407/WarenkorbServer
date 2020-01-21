@@ -1,0 +1,8 @@
+ch\swisslife\warenkorb\server\dto\ProduktDto.class
+ch\swisslife\warenkorb\server\dto\WarenkorbDto.class
+ch\swisslife\warenkorb\server\rest\RestServices.class
+ch\swisslife\warenkorb\server\dto\ProduktListeDto.class
+ch\swisslife\warenkorb\server\persistence\DataAccessObject.class
+ch\swisslife\warenkorb\server\persistence\DataBase.class
+ch\swisslife\warenkorb\server\dto\KundeDto.class
+ch\swisslife\warenkorb\server\dto\BestellungDto.class

@@ -1,0 +1,134 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ch.swisslife.warenkorb.server</groupId>
+	<artifactId>WarenkorbServer</artifactId>
+	<version>0.0.1</version>
+	<packaging>war</packaging>
+	<name>WarenkorbServer</name>
+
+	<!-- ............................................... -->
+	<!-- properties -->
+	<!-- ............................................... -->
+	<properties>
+		<dependency.javaee.version>7.0</dependency.javaee.version>
+		<dependency.jersey.version>2.27</dependency.jersey.version>
+		<dependency.swagger.version>1.5.18</dependency.swagger.version>
+		<dependency.junit.version>4.12</dependency.junit.version>
+	</properties>
+
+	<!-- ............................................... -->
+	<!-- build -->
+	<!-- ............................................... -->
+	<build>
+			<plugins>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<configuration>
+						<failOnMissingWebXml>false</failOnMissingWebXml>
+					</configuration>
+				</plugin>
+
+				<!--Plugin für die Generierung des swagger.json -->
+				<plugin>
+					<groupId>com.github.kongchen</groupId>
+					<artifactId>swagger-maven-plugin</artifactId>
+					<configuration>
+						<apiSources>
+							<!-- GFM Rest Service -->
+							<apiSource>
+								<basePath>/warenkorb-api</basePath>
+								<schemes>
+									<scheme>http</scheme>
+								</schemes>
+								<securityDefinitions>
+									<securityDefinition>
+										<name>Authorization</name>
+										<type>apiKey</type>
+										<in>header</in>
+									</securityDefinition>
+								</securityDefinitions>
+								<info>
+									<title>Warenkorb REST Service</title>
+									<version>1</version>
+								</info>
+								<locations>
+									<location>ch.swisslife.warenkorb.server.rest.RestServices</location>
+								</locations>
+								<swaggerDirectory>${project.build.directory}/swagger/service</swaggerDirectory>
+								<attachSwaggerArtifact>true</attachSwaggerArtifact>
+								<outputFormats>json</outputFormats>
+							</apiSource>
+						</apiSources>
+					</configuration>
+					<executions>
+						<execution>
+							<phase>compile</phase>
+							<goals>
+								<goal>generate</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+	</build>
+
+	<!-- ............................................... -->
+	<!-- dependencies -->
+	<!-- ............................................... -->
+	<dependencies>
+		<!-- compile -->
+		<!-- General -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.10</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-jersey2-jaxrs</artifactId>
+			<version>${dependency.swagger.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-moxy</artifactId>
+			<version>${dependency.jersey.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-json-jackson</artifactId>
+			<version>${dependency.jersey.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-multipart</artifactId>
+			<version>${dependency.jersey.version}</version>
+		</dependency>
+
+		<!-- provided -->
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>${dependency.javaee.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- test -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${dependency.junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+</project>
