@@ -1,8 +1,8 @@
-D:\Programmierung\eclipse workspace 1\Modul 150 - eBusiness Applikation\WarenkorbServer\src\main\java\ch\swisslife\warenkorb\server\dto\WarenkorbDto.java
-D:\Programmierung\eclipse workspace 1\Modul 150 - eBusiness Applikation\WarenkorbServer\src\main\java\ch\swisslife\warenkorb\server\persistence\DataAccessObject.java
-D:\Programmierung\eclipse workspace 1\Modul 150 - eBusiness Applikation\WarenkorbServer\src\main\java\ch\swisslife\warenkorb\server\dto\BestellungDto.java
-D:\Programmierung\eclipse workspace 1\Modul 150 - eBusiness Applikation\WarenkorbServer\src\main\java\ch\swisslife\warenkorb\server\dto\ProduktDto.java
-D:\Programmierung\eclipse workspace 1\Modul 150 - eBusiness Applikation\WarenkorbServer\src\main\java\ch\swisslife\warenkorb\server\dto\ProduktListeDto.java
-D:\Programmierung\eclipse workspace 1\Modul 150 - eBusiness Applikation\WarenkorbServer\src\main\java\ch\swisslife\warenkorb\server\dto\KundeDto.java
-D:\Programmierung\eclipse workspace 1\Modul 150 - eBusiness Applikation\WarenkorbServer\src\main\java\ch\swisslife\warenkorb\server\persistence\DataBase.java
-D:\Programmierung\eclipse workspace 1\Modul 150 - eBusiness Applikation\WarenkorbServer\src\main\java\ch\swisslife\warenkorb\server\rest\RestServices.java
+C:\Users\Marina\git\WarenkorbServer\WarenkorbServer\src\main\java\ch\swisslife\warenkorb\server\persistence\DataBase.java
+C:\Users\Marina\git\WarenkorbServer\WarenkorbServer\src\main\java\ch\swisslife\warenkorb\server\rest\RestServices.java
+C:\Users\Marina\git\WarenkorbServer\WarenkorbServer\src\main\java\ch\swisslife\warenkorb\server\dto\ProduktListeDto.java
+C:\Users\Marina\git\WarenkorbServer\WarenkorbServer\src\main\java\ch\swisslife\warenkorb\server\dto\WarenkorbDto.java
+C:\Users\Marina\git\WarenkorbServer\WarenkorbServer\src\main\java\ch\swisslife\warenkorb\server\persistence\DataAccessObject.java
+C:\Users\Marina\git\WarenkorbServer\WarenkorbServer\src\main\java\ch\swisslife\warenkorb\server\dto\BestellungDto.java
+C:\Users\Marina\git\WarenkorbServer\WarenkorbServer\src\main\java\ch\swisslife\warenkorb\server\dto\ProduktDto.java
+C:\Users\Marina\git\WarenkorbServer\WarenkorbServer\src\main\java\ch\swisslife\warenkorb\server\dto\KundeDto.java

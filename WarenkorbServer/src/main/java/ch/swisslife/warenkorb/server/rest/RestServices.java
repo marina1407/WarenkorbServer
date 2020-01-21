@@ -16,7 +16,7 @@ import ch.swisslife.warenkorb.server.persistence.DataAccessObject;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 
-@Path("/warenkorb-api")
+@Path("/")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class RestServices {
