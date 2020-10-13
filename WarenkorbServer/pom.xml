@@ -15,7 +15,7 @@
 		<dependency.javaee.version>7.0</dependency.javaee.version>
 		<dependency.jersey.version>2.27</dependency.jersey.version>
 		<dependency.swagger.version>1.5.18</dependency.swagger.version>
-		<dependency.junit.version>4.12</dependency.junit.version>
+		<dependency.junit.version>4.13.1</dependency.junit.version>
 	</properties>
 
 	<!-- ............................................... -->
